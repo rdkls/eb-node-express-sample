@@ -46,7 +46,7 @@ if (cluster.isMaster) {
     app.get('/', function(req, res) {
         res.render('index', {
             static_path: 'static',
-            theme: process.env.THEME || 'slate',
+            theme: process.env.THEME || 'amelia',
             flask_debug: process.env.FLASK_DEBUG || 'false'
         });
     });
